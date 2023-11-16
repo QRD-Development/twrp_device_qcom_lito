@@ -2,6 +2,11 @@
 
 import /init.recovery.qcom_decrypt.rc
 
+on early-init
+    mount tracefs tracefs /sys/kernel/tracing
+    chmod 0755 /sys/kernel/tracing
+    chown system system /sys/kernel/debug
+
 on init
     setprop sys.usb.configfs 1
 
