@@ -1,5 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
+import /init.recovery.qcom_decrypt.rc
+
 on init
     setprop sys.usb.configfs 1
 
