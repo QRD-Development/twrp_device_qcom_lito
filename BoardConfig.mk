@@ -117,7 +117,8 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
-
+FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/recovery/root/system/etc/vintf/manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/recovery/root/vendor/etc/vintf/manifest.xml
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # TWRP specific build flags
