@@ -9,6 +9,7 @@ on early-init
 
 on init
     setprop sys.usb.configfs 1
+    setprop prepdecrypt.loglevel 2
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
